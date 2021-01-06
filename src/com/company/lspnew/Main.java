@@ -1,20 +1,26 @@
 package com.company.lspnew;
 
+/**
+ * Kullanıcı işlemlerini yapan sınıf
+ * */
+class AccountService{
 
-class Draw{
-
-    public  void calcaluteArea(Rectangle rectangle){
-        System.out.println("Alan:"+rectangle.getArea());
-}
+    public  void Login(User user){
+        System.out.println("Login oldu");
+    }
 }
 
 public class Main {
 
     public static void main(String[] args) {
-        Draw d = new Draw();
-        d.calcaluteArea(new Rectangle(10,20));
 
-        d.calcaluteArea(new Square(14,25));
+        AccountService accountService = new AccountService();
+
+        User user=new User("user","password");
+        accountService.Login(user);
+
+        Admin admin = new Admin("admin","admin");
+        accountService.Login(admin);
 
     }
 }

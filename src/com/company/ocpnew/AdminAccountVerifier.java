@@ -1,5 +1,8 @@
 package com.company.ocpnew;
 
+/**
+ * Admin Kullanıcısının şifre bilgilerini kontrol eder
+ * */
 public class AdminAccountVerifier extends AccountVerifier {
     @Override
     public boolean isValid(String password) {

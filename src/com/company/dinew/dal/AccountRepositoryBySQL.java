@@ -1,10 +1,13 @@
-package com.company.dinew;
+package com.company.dinew.dal;
 
 import com.company.dinew.models.AccountModel;
 
 import java.util.UUID;
 
-public class AccountRepository implements IAccountRepository {
+/**
+ * Kullanıcı işlemlerini SQL veritabanı ile yapıldığı sınıf
+ * */
+public class AccountRepositoryBySQL implements IAccountRepository {
 
     @Override
     public void SaveAccount(AccountModel account) {

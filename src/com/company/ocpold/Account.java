@@ -1,9 +1,9 @@
 package com.company.ocpold;
 
+/**
+ *Kullanıcı işlemlerinin yapıldığı sınıf
+ *  */
 public class Account {
-   public String username;
-   public String password;
-
    public static void CreateAccount(String username,String password){
      if(AccountVerifier.isValidPassword(password)){
         System.out.printf("Oluşturuldu");

@@ -1,5 +1,8 @@
 package com.company.ocpold;
 
+/**
+ * Kullanıcının şifre bilgilerini kontrol eden sınıf
+ * */
 public class AccountVerifier {
 
     //Herkes için

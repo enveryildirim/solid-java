@@ -2,6 +2,9 @@ package com.company.srpold;
 
 import java.util.UUID;
 
+/**
+ * Kullanıcı ile alakalı bilgilerin tutulduğu ve işlemlerinin yapıldığı sınıf
+ * */
 public class Person {
 
 
@@ -70,15 +73,9 @@ public class Person {
     public void Logout(String username){
         System.out.printf("Logout başarılı");
     }
+
     public void ChangeName(String name){
         System.out.printf("Yeni İsim"+name);
     }
-    /*
-    * Person Sınıfı
-    * Hem isim soyad gibi profil bilgilerini Tutup ve Alakalı operasyonları yapıyor
-    * Hemde username password email gibi hesap bilgilerini tutup ve alakalı fonksiyonları tutuyor.
-    * Bu sınıf birden fazla sorumluluğu var bunlar için değiştirilmek zorunda ,bakımı zor
-    *
-    *
-    * */
+
 }

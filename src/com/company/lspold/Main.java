@@ -1,24 +1,32 @@
 package com.company.lspold;
 
+/**
+ * Kullanıcı işlemlerini yapan sınıf
+ * */
+class AccountService{
 
-class Draw{
-
-    public  void calcaluteArea(Rectangle rectangle){
-        System.out.println("Alan:"+rectangle.getArea());
-}
-    public  void calcaluteAreaSquare(Square square){
-        System.out.println("Alan:"+square.getArea());
+    public  void Login(User user){
+        System.out.println(" USer Login oldu");
+    }
+    /**
+     * Admin için eklediğimiz yeni login fonksiyonu
+     * */
+    public  void LoginAdmin(Admin admin){
+        System.out.println("Admin Login oldu");
     }
 }
 
 public class Main {
 
     public static void main(String[] args) {
-        Draw d = new Draw();
 
-        d.calcaluteArea(new Rectangle(10,20));
+        AccountService accountService = new AccountService();
 
-        d.calcaluteAreaSquare(new Square(14,25));
+        User user=new User("user","password");
+        accountService.Login(user);
+
+        Admin admin = new Admin("admin","admin");
+        accountService.LoginAdmin(admin);
 
     }
 }

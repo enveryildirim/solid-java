@@ -1,9 +1,12 @@
-package com.company.diold;
+package com.company.diold.dal;
 
 import com.company.diold.models.AccountModel;
 import java.util.UUID;
 
-public class AccountRepository  {
+/**
+ * Kullanıcı işlemlerini SQL veritabanı ile yapıldığı sınıf
+ * */
+public class AccountRepositoryBySQL  {
 
     public void SaveAccount(AccountModel account) {
 
